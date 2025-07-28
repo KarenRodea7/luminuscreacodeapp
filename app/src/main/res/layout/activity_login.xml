@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp"
+        android:layout_marginTop="50dp"
         android:gravity="center_horizontal">
 
         <ImageView
@@ -22,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bienvenido a LuminusCrea Booking"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="#0f1c2f"
             android:layout_marginTop="16dp"
@@ -32,10 +33,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Iniciar Sesión"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#0f1c2f"
             android:gravity="center"
+            android:layout_marginBottom="15dp"
             android:layout_marginTop="24dp"/>
 
         <!-- Campo para mensajes de error -->
@@ -50,14 +52,14 @@
             android:layout_marginBottom="12dp" />
 
         <EditText
-            android:id="@+id/emailInput"
+            android:id="@+id/User"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Correo electrónico"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/passwordInput"
+            android:id="@+id/Pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
@@ -65,19 +67,22 @@
             android:layout_marginTop="12dp"/>
 
         <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/Acceder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Acceder"
             android:backgroundTint="#00b3ff"
             android:textColor="#fff"
+            android:textSize="17dp"
             android:layout_marginTop="20dp"/>
 
         <TextView
+            android:id="@+id/Registro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="¿No tienes cuenta? Regístrate aquí"
             android:textColor="#00b3ff"
+            android:textSize="17dp"
             android:gravity="center"
             android:layout_marginTop="20dp"/>
     </LinearLayout>

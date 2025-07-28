@@ -4,8 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f0f4f8"
-    android:padding="16dp">
+    android:background="#f0f4f8">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0f1c2f"
+        android:title="Mi App" />
+
 
     <!-- Barra de búsqueda -->
     <EditText
@@ -13,15 +20,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Buscar por ubicación..."
-        android:padding="12dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
         android:background="@android:drawable/edit_text"
         android:drawableLeft="@android:drawable/ic_menu_search"
-        android:inputType="text" />
+        android:inputType="text"
+        />
+
 
     <!-- Listado de alojamientos -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listadoAlojamientos"
+    <ListView
+        android:id="@+id/ListaP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:padding="20dp"/>
 </LinearLayout>

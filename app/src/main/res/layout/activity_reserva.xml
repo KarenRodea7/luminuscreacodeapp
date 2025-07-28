@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reserva">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0f1c2f"
+        android:title="Mi App" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmar detalles de la reserva"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Hotel (readonly) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Hotel:" />
+
+            <EditText
+                android:id="@+id/etHotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel Playa Coral"
+                android:enabled="false"
+                android:focusable="false" />
+
+            <!-- Fecha de entrada -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de entrada:"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etFechaEntrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selecciona la fecha"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="date" />
+
+            <!-- Fecha de salida -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de salida:"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etFechaSalida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selecciona la fecha"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="date" />
+
+            <!-- Número de huéspedes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Huéspedes:"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etHuespedes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Número de huéspedes"
+                android:text="1" />
+
+            <!-- Botón continuar al pago -->
+            <Button
+                android:id="@+id/btnContinuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continuar al pago"
+                android:textSize="20dp"
+                android:layout_marginTop="24dp" />
+
+            <!-- Botón cancelar -->
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:textSize="20dp"
+                android:layout_marginTop="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

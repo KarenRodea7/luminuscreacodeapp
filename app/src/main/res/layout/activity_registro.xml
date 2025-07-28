@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="30dp"
         android:padding="24dp">
 
         <ImageView
@@ -16,6 +17,8 @@
             android:src="@drawable/logoprueba" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Crear una cuenta"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -32,7 +35,7 @@
 
         <!-- Nombre -->
         <EditText
-            android:id="@+id/etNombre"
+            android:id="@+id/Nom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre"
@@ -40,7 +43,7 @@
 
         <!-- Correo -->
         <EditText
-            android:id="@+id/etCorreo"
+            android:id="@+id/Correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Correo electrónico"
@@ -48,7 +51,7 @@
 
         <!-- Contraseña -->
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/Pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
@@ -56,7 +59,7 @@
 
         <!-- Teléfono -->
         <EditText
-            android:id="@+id/etTelefono"
+            android:id="@+id/Tel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Teléfono"
@@ -70,7 +73,7 @@
 
         <!-- Origen -->
         <EditText
-            android:id="@+id/etOrigen"
+            android:id="@+id/Direc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Origen" />
@@ -86,12 +89,23 @@
 
         <!-- Botón -->
         <Button
-            android:id="@+id/btnRegistrar"
+            android:id="@+id/Registrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrarse"
             android:backgroundTint="#00b3ff"
             android:textColor="#fff"
+            android:textSize="17dp"
             android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes cuenta?  Inicia sesión aquí"
+            android:textColor="#00b3ff"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
     </LinearLayout>
 </ScrollView>

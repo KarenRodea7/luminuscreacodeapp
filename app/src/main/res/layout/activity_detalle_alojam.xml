@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detalle_alojam">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0f1c2f"
+        android:titleTextColor="#ffffff"
+        android:title="Mi App" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:showCaption="true"
+                app:imageScaleType="fitCenter"
+                app:showNavigationButtons="true"
+                app:infiniteCarousel="false"
+                app:captionTextSize="20dp" />  <!-- Asegúrate de tener logoprueba.png en res/drawable -->
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/hotelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Playa Coral"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/hotelDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción: Cerca de la playa, con alberca y desayuno incluido."
+                android:layout_marginTop="16dp" />
+
+            <!-- Fecha de entrada -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de entrada:"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:id="@+id/etFechaEntrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de entrada"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="date"
+                android:layout_marginTop="8dp" />
+
+            <!-- Fecha de salida -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de salida:"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etFechaSalida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de salida"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="date"
+                android:layout_marginTop="8dp" />
+
+            <!-- Botón reservar -->
+            <Button
+                android:id="@+id/btnReservar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reservar"
+                android:layout_marginTop="20dp" />
+
+            <!-- Botón cancelar reserva -->
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar reserva"
+                android:layout_marginTop="15dp" />
+
+            <!-- Botón dejar reseña -->
+            <Button
+                android:id="@+id/btnResena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dejar reseña"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

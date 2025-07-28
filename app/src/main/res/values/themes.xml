@@ -1,9 +1,33 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.LuminusCreaCode" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Aplica el estilo personalizado a la Toolbar -->
+        <item name="toolbarStyle">@style/MyToolbarStyle</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="actionBarSize">90dp</item>
+
+        <!-- Para que el texto de los ítems en la toolbar también sea blanco -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextAppearance">@style/MyActionMenuTextStyle</item>
     </style>
 
-    <style name="Theme.LuminusCreaCode" parent="Base.Theme.LuminusCreaCode" />
+    <!-- Tema final de tu app -->
+    <style name="Theme.LuminusCreaCode" parent="Base.Theme.LuminusCreaCode">
+    </style>
+    <style name="MyActionMenuTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Estilo para la Toolbar con letras blancas -->
+    <style name="MyToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="subtitleTextColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@android:color/white</item> <!-- Para Android -->
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
 </resources>

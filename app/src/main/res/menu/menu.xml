@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_inicio"
+        android:title="Inicio"
+        android:iconTint="#ffff"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_explorar"
+        android:title="Explorar"
+        android:iconTint="#ffff"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_perfil"
+        android:title="Mi perfil"
+        android:iconTint="#ffff"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_contacto"
+        android:title="Contacto"
+        android:iconTint="#ffff"
+        app:showAsAction="ifRoom" />
+
+</menu>

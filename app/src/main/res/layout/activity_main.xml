@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detalle_alojam">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#0f1c2f"
+    android:title="Mi App" />
+
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
     android:background="#f0f4f8">
 
     <LinearLayout
@@ -48,6 +65,7 @@
             android:paddingBottom="16dp" />
 
         <Button
+            android:id="@+id/Alojamientos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Explorar alojamientos"
@@ -65,6 +83,13 @@
             android:orientation="vertical"
             android:layout_marginBottom="16dp">
 
+            <ListView
+                android:id="@+id/ListaTipoAloj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="20dp"/>
+
             <!-- Cada destino se puede convertir en CardView o simplemente LinearLayout -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,7 +106,7 @@
                     android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/progreso" />
+                    android:src="@drawable/img" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -90,12 +115,16 @@
                     android:paddingStart="12dp">
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Progreso"
                         android:textStyle="bold"
                         android:textColor="#0f1c2f"
                         android:textSize="16sp"/>
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Malecón, comida local y vistas increíbles"
                         android:textColor="#666"
                         android:textSize="14sp"/>
@@ -107,6 +136,8 @@
 
         <!-- Footer / contacto -->
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Email: soporte@luminuscreacode.com"
             android:textColor="#0f1c2f"
             android:textSize="14sp"
@@ -114,15 +145,20 @@
             android:layout_marginTop="32dp"/>
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Teléfono: +52 9991410909"
             android:textColor="#0f1c2f"
             android:textSize="14sp"
             android:gravity="center"/>
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Dirección: Mérida, Yucatán, México"
             android:textColor="#0f1c2f"
             android:textSize="14sp"
             android:gravity="center"/>
     </LinearLayout>
 </ScrollView>
+</RelativeLayout>

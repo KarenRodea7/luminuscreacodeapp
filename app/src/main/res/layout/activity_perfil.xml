@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfil">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0f1c2f"
+        android:title="Mi App" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/Nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Correo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:id="@+id/Correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:id="@+id/Tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Género -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Género"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:id="@+id/Genero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Origen -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Origen"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:id="@+id/Direc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Fecha de nacimiento -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:id="@+id/etFechaNac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Reservas activas -->
+            <TextView
+                android:id="@+id/textReservas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reservas activas:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/etReservas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Detalle de reserva -->
+            <TextView
+                android:id="@+id/textReservaDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver reserva: Hotel Playa Coral (18–20 agosto)"
+                android:textColor="#D500F9"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:layout_marginBottom="24dp" />
+
+
+            <!-- Botón para editar perfil
+            <Button
+                android:id="@+id/btnEditarPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar perfil"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#00b3ff"
+                android:textColor="#fff"
+                android:textSize="17dp"/>  -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
